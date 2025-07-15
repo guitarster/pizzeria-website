@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: #1a1a1a;
+  --primary-color: #ff3030;
+  --text-color: #ddd;
+  font-family: "Inter", sans-serif;
+}
+
+.heroSection {
+  color: var(--text-color);
+  text-align: center;
+  background: url("pics/hero.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroSectionHeading1 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.button {
+  color: #fff;
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
