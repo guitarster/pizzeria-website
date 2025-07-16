@@ -50,3 +50,29 @@ body {
   background-color: transparent;
   color: var(--primary-color);
 }
+
+@media only screen and (min-width: 600px) {
+  .heroTitle {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    padding: 1.2rem 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .heroTitle {
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.5rem;
+  }
+}
