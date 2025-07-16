@@ -221,6 +221,16 @@ li {
   color: var(--text-color);
 }
 
+.footer-nav {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.footer-copyright {
+  color: var(--text-color);
+  text-align: center;
+}
+
 @media only screen and (min-width: 600px) {
   .nav {
     gap: 2rem;
@@ -251,6 +261,10 @@ li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+  }
+
+  .footer-nav {
+    display: flex;
   }
 }
 
