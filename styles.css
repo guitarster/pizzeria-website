@@ -1,5 +1,6 @@
 * {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -9,27 +10,29 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.heroSection {
+.hero {
   color: var(--text-color);
   text-align: center;
-  background: url("pics/hero.jpg") no-repeat center center fixed;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh - 5rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.heroSectionHeading1 {
+.heroTitle {
   font-family: "Lobster", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 3rem;
   margin-bottom: 1rem;
+  line-height: 3rem;
 }
 
-.text {
+.heroSubtitle {
   font-size: 1rem;
 }
 
@@ -41,4 +44,9 @@ body {
   background-color: var(--primary-color);
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
 }
