@@ -78,7 +78,7 @@ body {
 
 .about {
   display: grid;
-  margin-top: 5rem;
+  margin: 4rem auto;
   height: 100%;
   align-items: center;
 }
@@ -96,7 +96,7 @@ body {
 
 h2 {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-color);
   margin: 2rem 0 0 3rem;
@@ -139,6 +139,33 @@ h2 {
 .pictures-item {
   width: 100%;
   height: 100%;
+}
+
+.times {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/info.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.table {
+  color: #fff;
+  margin-top: 2rem;
+  border-spacing: 0.5rem;
+}
+
+td {
+  padding-left: 5rem;
+  padding-right: 2.5rem;
+}
+
+.column-1 {
+  color: var(--text-color);
 }
 
 @media only screen and (min-width: 600px) {
@@ -186,8 +213,12 @@ h2 {
     grid-template-columns: 1fr 1fr;
   }
 
-  .h2 {
+  h2 {
     font-size: 2rem;
+  }
+
+  .table {
+    font-size: 1.5rem;
   }
 }
 
