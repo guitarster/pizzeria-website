@@ -61,7 +61,6 @@ body {
 
 .button {
   color: #fff;
-  margin-top: 4rem;
   padding: 1rem 2rem;
   border: 1px solid var(--primary-color);
   background-color: var(--primary-color);
@@ -74,6 +73,10 @@ body {
 .button:hover {
   background-color: transparent;
   color: var(--primary-color);
+}
+
+.hero-button {
+  margin-top: 4rem;
 }
 
 .about {
@@ -90,7 +93,6 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  max-width: 85%;
   margin: 0 auto;
 }
 
@@ -99,7 +101,6 @@ h2 {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-color);
-  margin: 2rem 0 0 3rem;
   text-decoration-line: underline;
   text-decoration-color: var(--primary-color);
   text-decoration-thickness: 0.05rem;
@@ -109,13 +110,13 @@ h2 {
 
 .about-text {
   color: var(--text-color);
-  padding: 2rem 3rem;
+  padding: 2rem 0;
   font-size: 0.9rem;
 }
 
 .about-button {
   align-items: start;
-  margin: 0 0 3rem 3rem;
+  margin: 0 0 3rem 0;
 }
 
 .about-pictures {
@@ -146,6 +147,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./images/info.jpg);
   background-position: center;
@@ -160,11 +162,62 @@ h2 {
 }
 
 td {
-  padding-left: 5rem;
-  padding-right: 2.5rem;
+  padding-left: 8rem;
 }
 
 .column-1 {
+  color: var(--text-color);
+  padding: 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
+  justify-content: center;
+}
+
+.contact-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.contact-content {
+  color: var(--text-color);
+}
+
+.contact-list {
+  margin-top: 1.5rem;
+  list-style-type: none;
+  line-height: 1rem;
+}
+
+li {
+  margin: 0.8rem 0;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-button-1 {
+  margin: 0.8rem 0;
+}
+
+.contact-button-2 {
+  background-color: transparent;
+  color: var(--primary-color);
+  margin: 0.8rem 0;
+}
+
+.contact-button-2:hover {
+  background-color: var(--primary-color);
   color: var(--text-color);
 }
 
@@ -193,6 +246,12 @@ td {
   .about-text {
     font-size: 1rem;
   }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -219,6 +278,19 @@ td {
 
   .table {
     font-size: 1.5rem;
+  }
+
+  .contact-list {
+    font-size: 1.3rem;
+  }
+
+  li {
+    margin: 1rem 0;
+  }
+
+  .contact-buttons {
+    flex-direction: row;
+    gap: 1rem;
   }
 }
 
