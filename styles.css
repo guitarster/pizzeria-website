@@ -221,6 +221,11 @@ li {
   color: var(--text-color);
 }
 
+.footer {
+  background-color: #303030;
+  padding-bottom: 3rem;
+}
+
 .footer-nav {
   display: grid;
   grid-template-columns: 1fr;
