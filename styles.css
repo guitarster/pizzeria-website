@@ -10,10 +10,32 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.hero {
+.nav {
+  height: 5rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 0.8rem;
+}
+
+.nav-link {
+  text-decoration: none;
   color: var(--text-color);
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 0.1rem;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  color: #fff;
   text-align: center;
-  height: 100vh;
+  height: calc(100vh - 5rem);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./images/hero.jpg");
   background-position: center;
@@ -52,6 +74,14 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
+  .nav {
+    gap: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
   .heroTitle {
     font-size: 4rem;
     line-height: 4rem;
@@ -67,6 +97,10 @@ body {
 }
 
 @media only screen and (min-width: 1000px) {
+  .nav {
+    gap: 4rem;
+  }
+
   .heroTitle {
     font-size: 6rem;
     line-height: 6.5rem;
